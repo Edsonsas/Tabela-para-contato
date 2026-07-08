@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela para contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1> TABELA DE CONTATOS</h1>
+    </header>
+
+        <form id="formulario-contato">
+                <label for="nome">Nome:
+                    <input id="nome" type="text" required placeholder="digite seu nome" pattern="[A-Za-zÀ-ÿ ]+" title="Use apenas letras e espaços"> 
+                </label>
+                <label for="number">Numero:
+                    <input type="number" id="number" required placeholder="digite seu numero"> 
+                </label>
+                <button type="submit"> Adicionar </button>
+        </form>
+
+        <table>
+            <thead>  
+                <tr>
+                    <th>Nome</th>
+                    <th>Numero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td></td>
+                <td></td>    
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
