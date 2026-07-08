@@ -13,13 +13,15 @@ form.addEventListener( 'submit', function(e){
         return;
     }
     
-    let linha = '<tr>'; 
+    let linha = '<tr></tr>'; 
     linha += `<td> ${inputNome.value} </td>`;
     linha += `<td> ${inputNumber.value} </td>`;
 
-    linhas += linha
+    linhas += linha;
 
     const bodyTabela = document.querySelector('tbody');
-    bodyTabela.innerHTML = linhas
+    bodyTabela.innerHTML = linhas;
 
+    inputNome.value = ''
+    inputNumber.value = ''
 });
